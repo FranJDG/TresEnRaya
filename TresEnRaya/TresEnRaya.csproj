@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>tres-en-raya.ico</ApplicationIcon>
+    <PackageIcon>tres-en-raya.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="o.gif" />
+    <None Remove="tablero.png" />
+    <None Remove="x.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="tres-en-raya.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\Imagenes\tres-en-raya.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="o.gif" />
+    <Resource Include="tablero.png" />
+    <Resource Include="x.gif" />
+  </ItemGroup>
+
+</Project>
